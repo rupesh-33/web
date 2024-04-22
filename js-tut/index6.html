@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var score=Math.random()*100
+        score =Math.round(score)
+        if(score<50){
+            document.write("F")
+            document.write("<br>"+score)
+        }
+        else if(score <70){
+            document.write("D")
+            document.write("<br>"+score)
+        }
+        else if(score <80){
+            document.write("C")
+            document.write("<br>"+score)
+        }
+        else if(score <90){
+            document.write("B")
+            document.write("<br>"+score)
+        }
+        else if(score <100){
+            document.write("A")
+            document.write("<br>"+score)
+        }
+        else{
+            window.alert("Score should be less than 100")
+        }
+    </script>
+</body>
+</html>

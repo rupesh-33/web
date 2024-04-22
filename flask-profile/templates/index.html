@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  </head>
+  <body>
+  <section class="section has-text-centered">
+    <figure class="image container is-128x128 mb-4">
+        <img src="https://c8.alamy.com/zooms/9/2b00afd3b52d4b2d85492351b1ef495f/2bwffbf.jpg" class="is-rounded" alt="">
+    </figure>
+    <p class="title is-4">Bhoir Page</p>
+    <p class="subtitle is-6">@Clever_Git</p>
+    <a class="button is-info is-outlined is-rounded" href={{url_for('contact')}}>Contact</a>
+    <a class="button is-danger is-outlined is-rounded" href="#">YouTube</a>
+  </section>
+  <section class="columns">
+    <div class="column is-three-fifths is-offset-one-fifth has-background-light">
+        <div class="columns is-gapless">
+            <div class="column is-half">
+                <div class="card m-3">
+                    <div class="card-content">
+                        <h1 class="title">About</h1>
+                        <p>{{profile.about}}</p>
+                    </div>
+                </div>
+                <div class="m-3 card has-background-link-light">
+                    <div class="card-content">
+                        <h1 class="title">Interrests</h1>
+                        {{profile.interests|safe}}
+                    </div>
+                </div>
+            </div>
+            <div class="column is-half">
+                <div class="card m-3 has-background-primary-light">
+                    <div class="card-content">
+                        <h1 class="title">Experience</h1>
+                        {{profile.experience|safe}}
+                    </div>
+                </div>
+                <div class="m-3 card has-background-warning-light">
+                    <div class="card-content">
+                        <h1 class="title">Education</h1>
+                        {{profile.education|safe}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  </body>
+</html>

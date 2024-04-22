@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id ="demo"></p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <script>
+        var x = "asdfghjkl"
+        var y = Math.random()
+        var fruits = ["apple","orange","Banana","Kiwi","Watermelon"]
+        var drinks = ["cola","sprite","7up"]
+        var z= y*100
+        var car = {type:"TOYATA",model:"integra",color:"black"}
+        document.getElementById("demo").innerHTML = car.type+ "<br>"+ " " +car.color;
+        document.getElementById("demo1").innerHTML = x.length;
+        document.getElementById("demo2").innerHTML = Math.random();
+        document.getElementById("demo3").innerHTML = Math.max(600,50,75,-5,-150);
+        document.getElementById("demo4").innerHTML = Math.round(z);
+        document.getElementById("demo5").innerHTML = fruits[3].length;
+        //document.getElementById("demo6").innerHTML = fruits.toString()
+        fruits.pop()
+        fruits.push("Mango")
+        fruits.shift()
+        fruits.unshift("Apple")
+        delete fruits[1]
+        fruits.splice(2,0,"Lemon","pear")
+        document.getElementById("demo6").innerHTML = fruits.join(" <br><br> ");
+        //document.getElementById("demo7").innerHTML = fruits.sort();
+        document.getElementById("demo7").innerHTML = fruits.reverse();
+        document.getElementById("demo8").innerHTML = drinks.concat(fruits);
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<blockbuster>
+    <movie category="action">
+        <title lang="en">Batman</title>
+        <producer>michael uslan</producer>
+        <year>1951</year>
+        <price>20.0</price>
+    </movie>
+    <movie category="comedy">
+        <title lang="en">Friday</title>
+        <producer>Brya Turner</producer>
+        <year>2019</year>
+        <price>15.0</price>
+    </movie>
+    <movie category="horrer">
+        <title lang="en">saw</title>
+        <producer>Mark Burg</producer>
+        <year>2019</year>
+        <price>18.0</price>
+    </movie>
+    <movie category="Drama">
+        <title lang="en">Gone girl</title>
+        <producer>David Fincher</producer>
+        <year>2019</year>
+        <price>20.0</price>
+    </movie>
+    <movie category="Drama">
+        <title lang="en">Whiplash</title>
+        <producer>Damien Chazelle</producer>
+        <year>2019</year>
+        <price>20.0</price>
+    </movie>
+    <movie category="adventure">
+        <title lang="en">Divergent</title>
+        <producer>Neil burger</producer>
+        <year>2014</year>
+        <price>20.0</price>
+    </movie>
+
+</blockbuster>
